@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shunsule Kikuchi - Portfolio Under Construction</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation Styling */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #fff;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 0 40px 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Intro Section */
+        #intro {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #intro h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        #intro p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #007BFF;
+        }
+
+        /* News Section */
+        #news ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #news ul li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        #news ul li:hover {
+            background: #e9ecef;
+        }
+
+        /* Research Section */
+        #research .research-item {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #007BFF;
+            border-radius: 5px;
+        }
+
+        /* AI Competitions Section */
+        #competitions .competition-item {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #28a745;
+            border-radius: 5px;
+        }
+
+        /* Experience Section */
+        #experience .experience-item {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #ffc107;
+            border-radius: 5px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#intro" style="color: #fff; text-decoration: none; font-size: 1.5em;">Your Name</a>
+            </div>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#competitions">AI Competitions</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#cv">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi! I'm Shunsuke Kikuchi, a passionate Computational Medicine, Bioinformatics and Network Science. Explore my work, research, and achievements below. This Website is Under Construction, Updates coming soon!!</p>
+            <div class="social-links">
+                <a href="shunkikuchi2111@ucla.edu" target="_blank">Email</a>
+                <a href="https://github.com/ShunsukeKikuchi" target="_blank">GitHub</a>
+                <a href="https://twitter.com/ne_gi_chi__" target="_blank">Twitter</a>
+                <a href="https://www.kaggle.com/shunsukekikuchi" target="_blank">Kaggle</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news">
+        <div class="container">
+            <h2>News</h2>
+            <ul>
+                <li>
+                    <strong>April 2024:</strong> Started a new research project on [Topic].
+                </li>
+                <li>
+                    <strong>March 2024:</strong> Participated in [Competition/Event].
+                </li>
+                <!-- Add more news items as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research">
+        <div class="container">
+            <h2>Research</h2>
+            <div class="research-item">
+                <h3>scGRNdb</h3>
+                <p>Description of your research project, methodologies used, and key findings.</p>
+                <a href="https://link-to-paper.com" target="_blank">Read More</a>
+            </div>
+            <div class="research-item">
+                <h3>Potential drug for migraine, RgIA4, on rodent model</h3>
+                <p>Description of another research project, its significance, and outcomes.</p>
+                <a href="https://link-to-paper.com" target="_blank">Read More</a>
+            </div>
+            <!-- Add more research items as needed -->
+        </div>
+    </section>
+
+    <!-- AI Competitions Section -->
+    <section id="competitions">
+        <div class="container">
+            <h2>AI Competitions</h2>
+            <div class="competition-item">
+                <h3>Competition Name 1</h3>
+                <p>Details about your participation, achievements, and any awards won.</p>
+                <a href="https://competition-link.com" target="_blank">Learn More</a>
+            </div>
+            <div class="competition-item">
+                <h3>Competition Name 2</h3>
+                <p>Details about another competition, your role, and results.</p>
+                <a href="https://competition-link.com" target="_blank">Learn More</a>
+            </div>
+            <!-- Add more competition items as needed -->
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Job Title / Role</h3>
+                <p>Company/Organization Name | Duration (e.g., Jan 2023 - Present)</p>
+                <ul>
+                    <li>Responsibility or achievement 1.</li>
+                    <li>Responsibility or achievement 2.</li>
+                    <li>Responsibility or achievement 3.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Job Title / Role</h3>
+                <p>Company/Organization Name | Duration (e.g., Jun 2021 - Dec 2022)</p>
+                <ul>
+                    <li>Responsibility or achievement 1.</li>
+                    <li>Responsibility or achievement 2.</li>
+                    <li>Responsibility or achievement 3.</li>
+                </ul>
+            </div>
+            <!-- Add more experience items as needed -->
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv">
+        <div class="container">
+            <h2>Curriculum Vitae</h2>
+            <p>You can download my CV in PDF format below:</p>
+            <a href="CV.pdf" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px;">Download CV</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript for Mobile Navigation Toggle (if needed) -->
+    <!-- Uncomment the following script and add a toggle button in the nav if you want a mobile menu -->
+    <!--
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('nav ul');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-open');
+        });
+    </script>
+    -->
+</body>
+</html>
