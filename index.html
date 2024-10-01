@@ -182,6 +182,51 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .competition-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .competition-item {
+            flex: 1 1 300px;
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #28a745;
+            border-radius: 5px;
+        }
+
+        .competition-details {
+            margin-top: 10px;
+        }
+
+        .competition-details ul {
+            padding-left: 20px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .competition-container {
+                flex-direction: column;
+            }
+
+            .competition-item {
+                flex-basis: 100%;
+            }
+
+            .competition-details {
+                margin-top: 5px;
+            }
+
+            h2, h3, h4 {
+                font-size: 1.1em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -214,6 +259,7 @@
                 <a href="https://github.com/ShunsukeKikuchi" target="_blank">GitHub</a>
                 <a href="https://twitter.com/ne_gi_chi__" target="_blank">Twitter</a>
                 <a href="https://www.kaggle.com/shunsukekikuchi" target="_blank">Kaggle</a>
+                <a href="https://www.linkedin.com/in/shunsuke-kikuchi-4b9671286/" target="_blank">LinkedIn</a>
             </div>
         </div>
     </section>
@@ -224,12 +270,19 @@
             <h2>News</h2>
             <ul>
                 <li>
-                    <strong>April 2024:</strong> Started a new research project on [Topic].
+                    <strong>October 2024:</strong> Oral presentation at MICCAI Workshop Sessions - Endoscopic Vision Challenges. Present our challenge solutions for SegCol, OSS and STIR challenges.
                 </li>
                 <li>
-                    <strong>March 2024:</strong> Participated in [Competition/Event].
+                    <strong>August 2024:</strong> Oral presentation at UCLA undergraduate summer research showcase. scGRNdb: A database of gene regulatory networks for single-cell and spatial transcriptomics data.
                 </li>
-                <!-- Add more news items as needed -->
+                <li>
+                    <strong>August 2024:</strong> Poster presentation at the end of the B.I.G. Summer Research Program. scGRNdb: A database of gene regulatory networks for single-cell and spatial transcriptomics data.
+                </li>
+                <li>
+                    <strong>July 2024:</strong> Finish 27th/1950 in the NeurIPS 2024 - Predict New Medicines with BELKA competition on Kaggle.
+                </li>
+                <li>
+                    <strong>June 2024:</strong> Start internship at Jmees Inc. as a Machine Learning Engineer.
             </ul>
         </div>
     </section>
@@ -267,20 +320,49 @@
             <div class="competition-item">
                 <h3>NeurIPS 2024 - Predict New Medicines with BELKA</h3>
                 <p><b>Silver Medal</b> (27/1950) (<a href="https://www.kaggle.com/competitions/leash-BELKA/leaderboard" target="_blank">Leaderboard</a>)</p>
-                <p>Details about your participation, achievements, and any awards won.</p>
+                <p>Compete with machine learning model which predict small molecule-protein interaction using the Big Encoded Library for Chemical Assessment (BELKA)</p>
                     See more details of our solution <a href="https://www.kaggle.com/competitions/leash-BELKA/discussion/519191" target="_blank">here</a>.
                 </div>
             <div class="competition-item">
                     <h3>HMS - Harmful Brain Activity Classification</h3>
                     <p><b>Bronze Medal</b> (245/2767) (<a href="https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification/leaderboard" target="_blank">Leaderboard</a>)</p>
-                <p>Details about your participation, achievements, and any awards won.</p>
+                <p> Classify seizures and other partterns of harmful brain activity in critically ill patients</p>
                 </div>
             <h2>Conference Challenges</h2><br>
-            <div class="competition-item">
-                <h3>MICCAI Endoscopic Vision Challenge 2024</h3>
-                <!--p><b>Silver Medal</b> (27/1950) (<a href="https://www.kaggle.com/competitions/leash-BELKA/leaderboard" target="_blank">Leaderboard</a>)</p-->
-                <p>Details about your participation, achievements, and any awards won.</p>
-                    See more details of our solution <a href="https://www.kaggle.com/competitions/leash-BELKA/discussion/519191" target="_blank">here</a>.
+            <div class="competition-container">
+                <div class="competition-item">
+                    <h3>MICCAI Endoscopic Vision Challenge 2024: SegCol</h3>
+                    <p><strong>Task 1 & 2:</strong> Results pending</p>
+                    <div class="competition-details">
+                        <p>4-class segmentation challenge for colorectal cancer screening using colonoscopy frames. Developed models to segment anatomy edges and instrument masks.</p>
+                        <ul>
+                            <li>Task 1: Semantic segmentation for Surgical Tools and Colon Fold Edges</li>
+                            <li>Task 2: Selecting set of images from pool to decide which images to annotate (Active Learning)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <h3>MICCAI Endoscopic Vision Challenge 2024: Open Suturing Skills Challenge</h3>
+                    <p><strong>Task 1 & 2:</strong> Results pending</p>
+                    <div class="competition-details">
+                        <p>Classification of surgical suturing skills using simulated environment videos.</p>
+                        <ul>
+                            <li>Task 1: Predicting total Global Rating Score (GRS)</li>
+                            <li>Task 2: Predicting full OSATS scoring table</li>
+                        </ul>
+                        <p>For the bost tasks, perform surgical tools segmentation and detect tips of then, then put the movements of them into 1DCNN+GRU model to extract features. Final prediction is performed by GBDT.</p>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <h3>MICCAI Endoscopic Vision Challenge 2024: STIR Challenge</h3>
+                    <p><strong>Task 1 & 2:</strong> Results pending</p>
+                    <div class="competition-details">
+                        <p>Predicting trajectories in surgical tatoos on tissues in robotic surgery video using the STIR (Surgical Tattoos in Infrared) Dataset.</p>
+                        <ul>
+                            <li>2D point tracking</li>
+                            <li>3D point tracking using stereo-manner left and right videos</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- Add more competition items as needed -->
@@ -292,24 +374,13 @@
         <div class="container">
             <h2>Experience</h2><br>
             <div class="experience-item">
-                <h3>Job Title / Role</h3>
-                <p>Company/Organization Name | Duration (e.g., Jan 2023 - Present)</p>
+                <h3>Internship / ML Engineer</h3>
+                <p>Jmees Inc. | June - October 2024</p>
                 <ul>
-                    <li>Responsibility or achievement 1.</li>
-                    <li>Responsibility or achievement 2.</li>
-                    <li>Responsibility or achievement 3.</li>
+                    <li>Involved in deveoping AI for surgical support systems </li>
+                    <li>Partcipated in 3 MICCAI Challenges to give insights for our models</li>
                 </ul>
             </div>
-            <div class="experience-item">
-                <h3>Job Title / Role</h3>
-                <p>Company/Organization Name | Duration (e.g., Jun 2021 - Dec 2022)</p>
-                <ul>
-                    <li>Responsibility or achievement 1.</li>
-                    <li>Responsibility or achievement 2.</li>
-                    <li>Responsibility or achievement 3.</li>
-                </ul>
-            </div>
-            <!-- Add more experience items as needed -->
         </div>
     </section>
 
