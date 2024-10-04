@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- 
+    _____  _                              _        _  ___  _               _     _ 
+   / ____|| |                            | |      | |/ / |(_)             | |   (_)
+  | (___  | |__   _   _  _ __   ___  _  _| | ___  | ' /| | _  _ __   _   _| |__  _ 
+   \___ \ | '_ \ | | | || '_ \ / __|| |/ / |/ _ \ |  < | || || '_ \ | | | | '_ \| |
+   ____) || | | || |_| || | | |\__ \|   <| |  __/ | . \| || || | | || |_| | | | | |
+  |_____/ |_| |_| \__,_||_| |_||___/|_|\_\_|\___| |_|\_\_||_||_| |_| \__,_|_| |_|_|
+                                                                                   
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shunsule Kikuchi - Portfolio Under Construction</title>
+    <title>Shunsule Kikuchi</title>
     <style>
         /* Reset some default styles */
         * {
@@ -75,7 +86,8 @@
 
         /* Intro Section */
         #intro {
-            background: #fff;
+            
+            background: #f4f4f4;
             padding: 40px;
             border-radius: 8px;
             text-align: center;
@@ -232,6 +244,20 @@
                 font-size: 0.9em;
             }
         }
+
+        .photos-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .photo {
+            width: auto;
+            height: 20%;
+            max-width: 200px;
+        }
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -258,7 +284,7 @@
                 <li><a href="#news">News</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#competitions">Awards</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#experience">Experience</a></li
                 <li><a href="#cv">CV</a></li>
             </ul>
         </div>
@@ -270,13 +296,24 @@
         <div class="container">
         <h1></h1>
             <h1>Welcome to My Page !</h1>
-            <p>Hi! I'm Shunsuke Kikuchi, a 2nd-year transfer student at UCLA. I'm interested in AI, Biology and Networks. Explore my work, research, and achievements below. This Website is Under Construction, Updates coming soon!!</p>
+            <p>Hi! I'm Shunsuke Kikuchi, a 2nd-year transfer student at UCLA. I'm interested in AI, Biology and Networks. 
+                Originally from Tokyo-metoropolitan area, I have been studying in the US since 2021. Aiming to be a researcher in the field of AI and Biology/Medicine.
+                In my free time, I enjoy jogging, manga/anime, and traveling.
+                Also as a Kaggle enthusiast, I have participated in various competitions and challenges. Usually choose to work on biology or medicine related competition,
+                 but I'm also curious about other fields, including NLP, GNN and reinforcement learning. <br>
+                Explore my work, research, and achievements below! </p>
             <div class="social-links">
-                <a href="shunkikuchi2111@ucla.edu" target="_blank">Email</a>
+                <a href="mailto:shunkikuchi2111@ucla.edu" target="_blank">Email</a>
                 <a href="https://github.com/ShunsukeKikuchi" target="_blank">GitHub</a>
-                <a href="https://twitter.com/ne_gi_chi__" target="_blank">Twitter</a>
+                <a href="https://twitter.com/ne_gi_chi__" target="_blank">Twitter[JP]</a>
+                <a href="https://twitter.com/shunkikuch" target="_blank">Twitter[EN]</a>
                 <a href="https://www.kaggle.com/shunsukekikuchi" target="_blank">Kaggle</a>
                 <a href="https://www.linkedin.com/in/shunsuke-kikuchi-4b9671286/" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="photos-container">
+                <img src="headshot.png" alt="Shunsuke Kikuchi Headshot" class="photo">
+                <img src="ne_gi_chi__.png" alt="SNN Icon" class="photo">
             </div>
         </div>
     </section>
@@ -287,7 +324,7 @@
             <h2>News</h2>
             <ul>
                 <li>
-                    <strong>October 2024:</strong> Oral presentation at MICCAI Workshop Sessions - Endoscopic Vision Challenges. Present our challenge solutions for SegCol, OSS and STIR challenges.
+                    <strong>October 2024:</strong> Oral presentation at MICCAI Workshop Sessions - Endoscopic Vision Challenges. Present our challenge solutions for SegCol, OSS, STIR and PhaKIR challenges.
                 </li>
                 <li>
                     <strong>August 2024:</strong> Oral presentation at UCLA undergraduate summer research showcase. scGRNdb: A database of gene regulatory networks for single-cell and spatial transcriptomics data.
@@ -299,7 +336,13 @@
                     <strong>July 2024:</strong> Finish 27th/1950 in the NeurIPS 2024 - Predict New Medicines with BELKA competition on Kaggle.
                 </li>
                 <li>
-                    <strong>June 2024:</strong> Start internship at Jmees Inc. as a Machine Learning Engineer.
+                    <strong>June 2024:</strong> Start internship at Jmees Inc. as a Machine Learning Engineer. Start Summer Resarch Programs (B.I.G. and URC-summer) at UCLA.
+                </li>
+                <li>
+                    <strong>April 2024:</strong> Finish 245th/2767 in the HMS - Harmful Brain Activity Classification competition on Kaggle.
+                </li>
+                <li>
+                    <strong>March 2024:</strong> Finish 4th prize in the 6th National Medical AI Contest in Japan.
             </ul>
         </div>
     </section>
@@ -383,6 +426,17 @@
                 </div>
             </div>
             <!-- Add more competition items as needed -->
+             <div class="competition-item">
+                    <h3>6th National Medical AI Contest in Japan</h3>
+                    <p><strong>4th prize</strong> (10000 JPY) (<a href="https://www.kaggle.com/competitions/medical-ai-contest2024/leaderboard" target="_blank">Leaderboard</a>)</p>
+                    <div class="competition-details">
+                        <p>The task was Semantic segmentation of Mutli-Organ, using one of the largest dataset, TotalSegmentator. Segmented organs include
+                             gallbladder, liver, pancreas, spleen, kidneys, adrenal glands, aorta, stomach, and duodenum. 
+                        </p>
+                        <p>For the best model, we employed 3D-UNet approached with large backbone architecutre SeresNext50x4d, with UNet++ and scse block. Achieved >0.89 in mean DSC.
+                            Experimental Source Codes and solutions are <a href="https://github.com/ShunsukeKikuchi/MedAI6.git" target="_blank" >here</a></p>
+                    </div>
+                </div>
         </div>
     </section>
 
