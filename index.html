@@ -296,14 +296,14 @@
         <div class="container">
         <h1></h1>
             <h1>Welcome to My Page !</h1>
-            <p>Hi! I'm Shunsuke Kikuchi, a 2nd-year transfer student at UCLA. I'm interested in AI, Biology and Networks. 
-                Originally from Tokyo-metoropolitan area, I have been studying in the US since 2021. Aiming to be a researcher in the field of AI and Biology/Medicine.
+            <p>Hi! I'm Shunsuke Kikuchi, a research ML engineer at Jmees Inc, and a project-researcher at National Cancer Center Japan East Hospital. I'm interested in Machine Learning, surgical naviagation, precision medicine and medical robotics. 
+                Originally from Tokyo-metoropolitan area, I have been studying in the US since 2021. Aiming to be a researcher in the field of AI in medicine.
                 In my free time, I enjoy jogging, manga/anime, and traveling.
-                Also as a Kaggle enthusiast, I have participated in various competitions and challenges. Usually choose to work on biology or medicine related competition,
-                 but I'm also curious about other fields, including NLP, GNNs and reinforcement learning. <br>
+                Also as a Kaggle enthusiast, I have participated in various competitions and challenge workshops. Usually choose to work on video-related competition,
+                 but I'm also curious about other fields, including 3D reconstruction, segmentation, and reinforcement learning. <br>
                 Explore my work, research, and achievements below! </p>
             <div class="social-links">
-                <a href="mailto:shunkikuchi2111@ucla.edu" target="_blank">Email</a>
+                <a href="mailto:kikushun2111@gmail.com" target="_blank">Email</a>
                 <a href="https://github.com/ShunsukeKikuchi" target="_blank">GitHub</a>
                 <a href="https://twitter.com/ne_gi_chi__" target="_blank">Twitter[JP]</a>
                 <a href="https://twitter.com/shunkikuch" target="_blank">Twitter[EN]</a>
@@ -323,6 +323,30 @@
         <div class="container">
             <h2>News</h2>
             <ul>
+                <li>
+                    <strong>December 2025:</strong> Published a technical blog (in Japanese) about our solutions for video understanding competitions. <a href="https://qiita.com/ShunsukeKikuchi/items/53f676a8ae0a3264ee8a" target="_blank">Read the blog</a>
+                </li>
+                <li>
+                    <strong>October 2025:</strong> Hired as a research engineer at Jmees Inc.
+                </li>
+                <li>
+                    <strong>September 2025:</strong> Oral Presentation at 3 MICCAI 2025 Workshop Sessions - SAGES CVS challenge, TopBrain Challenge, and EndoVis25 challenges (OSS, RARE). Presented our challenge winning solutions.
+                </li>
+                <li>
+                    <strong>September 2025:</strong> Poster Session at MICCAI 2025 Workshop Sessions MSB EMERGE. Present our work on Temporal Memory Augmented Module (TMAM) for Consistent Video Segmentation.
+                </li>
+                <li>
+                    <strong>July 2025:</strong> My first paper on Temporal Memory Augmented Module (TMAM) for Consistent Video Segmentation is accepted to MICCAI 2025 workshop MSB EMERGE !
+                </li>
+                <li>
+                    <strong>July 2025:</strong> Start research at National Cancer Center Japan East Hospital Department of Gynecology as a project-researcher.
+                </li>
+                <li>
+                    <strong>June 2025:</strong> Graduate from University of California, Los Angeles with a B.S. in Computational & Systems Biology and B.S. in Applied Mathematics with Honors.
+                </li>
+                <li>
+                    <strong>June 2025:</strong> Poster presentation at The 1st Japan-US Science Forum in Southern California - Memory-Enhanced Temporal Learning: Leveraging SAM2's Memory Modules for Consistent Video Segmentation 
+                </li>
                 <li>
                     <strong>February 2025:</strong> Poster presentation at The 1st Japan-US Science Forum in Southern California - Memory-Enhanced Temporal Learning: Leveraging SAM2's Memory Modules for Consistent Video Segmentation 
                 </li>
@@ -355,12 +379,24 @@
         <div class="container">
             <h2>Research</h2>
             <div class="research-item">
+                <h3>Phase Recognition of Laparoscopic Hysterectomy Toward Robotic Automation</h3>
+                <h4>National Cancer Center East Hospital, Japan</h4>
+                <p>
+                    In total hysterectomy, a uterine manipulator is used to stabilize the uterus and ensure safe resection. 
+                    However, during robot-assisted surgery, intraoperative manipulation of the device cannot be controlled directly by the surgeon, highlighting the need for automation. 
+                    In this research, we aim to develop a surgical phase classification model that recognizes the manipulator's angle from endoscopic video. 
+                    The annotation scheme is being refined through close collaboration and repeated discussion between clinicians and annotators to ensure it is suitable for deep learning models.
+                </p>
+                <p>July 2025 – Present. Working as a project researcher.</p>
+                <!--a href="https://link-to-paper.com" target="_blank" >Read More</a-->
+            </div>
+            <div class="research-item">
                 <h3>scGRNdb</h3>
                 <h4>Dr. Xia Yang's Lab @ UCLA</h4>
                 <p>SCING is a machine learning model that predicts gene regulatory networks from single-cell & spatial transcriptomics data. 
                     Using GRNs from SCING, we are developing scGRNdb, an analysis pipeline with a database of gene regulatory networks for single-cell and spatial transcriptomics data.
-                    I am involved in the part of designing community detection algorithm, pipeline development, and Evaluations.</p>
-                <p> 23 Winter - Current. Working as an Undergraduate Research Assistant. </p>
+                    I was involved in the part of designing community detection algorithm, pipeline development, and Evaluations.</p>
+                <p> 23 Winter - 25 Spring. Working as an Undergraduate Research Assistant. </p>
                 <!--a href="https://link-to-paper.com" target="_blank" >Read More</a-->
             </div>
             <div class="research-item">
@@ -370,7 +406,7 @@
                     TMAM applies a memory encoder to past-frame predictions and uses memory attention to refine current-frame features. By leveraging the inherent temporal redundancy in video sequences, 
                     TMAM captures contextual cues that may be overlooked by single-frame processing, thereby improving robustness to occlusions and boundary artifacts.</p>
                 <p> 24 Winter - 25 Spring. Leading the project as the first author of the paper. </p>
-                <!--a href="https://link-to-paper.com" target="_blank" >Read More</a-->
+                <a href="https://openreview.net/pdf?id=UOKCo1qkNU" target="_blank" >Read More</a>
             </div>
             <div class="research-item">
                 <h3>Clinical Trial of Potential Migraine Drug on Rodent Model</h3>
@@ -401,6 +437,53 @@
                 <p>Compete with machine learning mode which classify seizures and other partterns of harmful brain activity in critically ill patients.</p>
                 </div>
             <h2>Conference Challenges</h2><br>
+            <h3>MICCAI 2025 Challenges</h3><br>
+            <div class="competition-container">
+                <div class="competition-item">
+                    <h3>MICCAI 2025 Lighthouse Challenge — SAGES CVS Challenge <a href="http://cvschallenge.org/miccai-2025" target="_blank">(Official site)</a></h3>
+                    <p><strong>Task A (CVS Classification):</strong> <b>2nd Prize</b> ($1,850) &nbsp; | &nbsp; <strong>Task B (Computationally Efficient, CPU-limited):</strong> <b>3rd Prize</b> ($1,000)</p>
+                    <div class="competition-details">
+                        <p>This Lighthouse challenge was selected for its quality and scale within the MICCAI ecosystem.</p>
+                        <ul>
+                            <li><strong>Task A:</strong> Trained a 2.5D EVA-02 model in a multi-task setting (segmentation + depth). Careful EMA and hyperparameter tuning improved scores. At inference, compiler-based acceleration was used to meet strict time limits.</li>
+                            <li><strong>Task B:</strong> Trained a ResNeXt image classifier with multi-task learning (segmentation + depth). Exported to ONNX, optimized with ONNX-simplifier, and accelerated with ONNX Runtime CPU to satisfy the time constraint.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <h3>MICCAI 2025 TopBrain Challenge <a href="https://topbrain2025.grand-challenge.org/" target="_blank">(Official site)</a></h3>
+                    <p><strong>Segmentation Challenge for Whole Brain Vessel Anatomy</strong> — <b>CTA: 3rd</b>, <b>MTA: 3rd</b></p>
+                    <div class="competition-details">
+                        <ul>
+                            <li>Increased nnUNet training from the default 1000 to 3000 epochs based on prior experience.</li>
+                            <li>Despite joining near the deadline and minimal iteration, achieved these results in a one-shot run.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <h3>MICCAI 2025 EndoVis — Open Suturing Skills Challenge <a href="https://www.synapse.org/Synapse:syn66256386/wiki/" target="_blank">(Official site)</a></h3>
+                    <p><strong>GRS:</strong> <b>2nd</b> &nbsp; | &nbsp; <strong>OSATS:</strong> <b>1st</b> &nbsp; | &nbsp; <strong>TRACK:</strong> <b>1st</b></p>
+                    <div class="competition-details">
+                        <ul>
+                            <li><strong>GRS / OSATS:</strong> Used Swin3D and fine-tuned models trained on keypoints and depth. Added optical flow and foreground-focused views as auxiliary visual features.</li>
+                            <li><strong>TRACK:</strong> Used a ConvNeXt encoder with an FPN decoder. Fine-tuned keypoint heads with coordinate MSE and heatmap losses alongside a segmentation pretraining.</li>
+                        </ul>
+                        <p>Overall objective: automatic assessment of suturing surgical skills.</p>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <h3>MICCAI 2025 EndoVis — RARE <a href="https://rare25.grand-challenge.org/" target="_blank">(Official site)</a></h3>
+                    <p><strong>3rd</strong></p>
+                    <div class="competition-details">
+                        <p>Primary challenge: building robust models for extremely rare positive cases with subtle visual cues in real-world settings.</p>
+                        <ul>
+                            <li>Model 1: Pretrained with Masked Image Modeling on multiple external datasets, then fine-tuned on the challenge dataset.</li>
+                            <li>Model 2: Fine-tuned a model pretrained for cancer segmentation.</li>
+                            <li>Although the public leaderboard score was modest due to small-sample instability, we trusted the more reliable AUC metric and achieved a significant shake-up on the private leaderboard.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="competition-container">
                 <div class="competition-item">
                     <h3>MICCAI Endoscopic Vision Challenge 2024: SegCol</h3>
@@ -458,7 +541,7 @@
             <h2>Experience</h2><br>
             <div class="experience-item">
                 <h3>Internship / ML Engineer</h3>
-                <p>Jmees Inc. | June - October 2024</p>
+                <p>Jmees Inc. | June - September 2025</p>
                 <ul>
                     <li>Involved in deveoping AI for surgical support systems </li>
                     <li>Partcipated in 3 MICCAI Challenges to give insights for our models</li>
