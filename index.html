@@ -379,6 +379,16 @@
         <div class="container">
             <h2>Research</h2>
             <div class="research-item">
+                <h3>Zero-shot Adaption of Image Stiching Towards Endoscopic Surgical Video Understanding</h3>
+                <h4>Jmees Inc.</h4>
+                <p>
+                    Effective surgical video understanding requires the clear decomposition of the surgical scene into foreground elements, such as surgical tools, and background anatomical structures. 
+                    This research applies image stitching techniques to surgical videos to enable the automated removal and inpainting of specific objects based on ground truth data. 
+                    By generating a stabilized, wide-angle view, we aim to enhance the temporal consistency of model predictions for downstream tasks, including segmentation, tracking, and phase classification. 
+                    Furthermore, providing contextual information from outside the current frame allows the model to improve its overall predictive accuracy and robustness.
+                </p>
+                <a href="https://openreview.net/pdf?id=UOKCo1qkNU" target="_blank" >Read More</a>
+            <div class="research-item">
                 <h3>Phase Recognition of Laparoscopic Hysterectomy Toward Robotic Automation</h3>
                 <h4>National Cancer Center East Hospital, Japan</h4>
                 <p>
@@ -464,11 +474,11 @@
                     <h3>MICCAI 2025 EndoVis — Open Suturing Skills Challenge <a href="https://www.synapse.org/Synapse:syn66256386/wiki/" target="_blank">(Official site)</a></h3>
                     <p><strong>GRS:</strong> <b>2nd</b> &nbsp; | &nbsp; <strong>OSATS:</strong> <b>1st</b> &nbsp; | &nbsp; <strong>TRACK:</strong> <b>1st</b></p>
                     <div class="competition-details">
+                        <p>Overall objective: automatic assessment of suturing surgical skills.</p>
                         <ul>
                             <li><strong>GRS / OSATS:</strong> Used Swin3D and fine-tuned models trained on keypoints and depth. Added optical flow and foreground-focused views as auxiliary visual features.</li>
                             <li><strong>TRACK:</strong> Used a ConvNeXt encoder with an FPN decoder. Fine-tuned keypoint heads with coordinate MSE and heatmap losses alongside a segmentation pretraining.</li>
                         </ul>
-                        <p>Overall objective: automatic assessment of suturing surgical skills.</p>
                     </div>
                 </div>
                 <div class="competition-item">
