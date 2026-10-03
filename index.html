@@ -143,6 +143,32 @@
             border-radius: 5px;
         }
 
+        /* Publications Section */
+        #publications .publication-year {
+            margin: 30px 0 12px;
+        }
+
+        #publications .publication-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #publications .publication-item {
+            background: #fff;
+            margin-bottom: 14px;
+            padding: 18px 20px;
+            border-left: 5px solid #6f42c1;
+            border-radius: 5px;
+        }
+
+        #publications .publication-item p {
+            margin: 0;
+        }
+
+        #publications .publication-item a {
+            font-weight: bold;
+        }
+
         /* AI Competitions Section */
         #competitions .competition-item {
             background: #fff;
@@ -296,8 +322,8 @@
         <div class="container">
         <h1></h1>
             <h1>Welcome to My Page !</h1>
-            <p>Hi! I'm Shunsuke Kikuchi, a research ML engineer at Jmees Inc, and a project-researcher at National Cancer Center Japan East Hospital. I'm interested in Machine Learning, surgical naviagation, precision medicine and medical robotics. 
-                Originally from Tokyo-metoropolitan area, I have been studying in the US since 2021. From September 2026, I will join Imperial College London's MRes in Medical Robotics &amp; Image-Guided Interventions. Aiming to be a researcher in the field of AI in medicine.
+            <p>Hi! I'm Shunsuke Kikuchi, a research engineer at Jmees Inc., a project researcher at National Cancer Center Hospital East, and an MRes student in Medical Robotics &amp; Image-Guided Intervention at Imperial College London. I'm interested in machine learning, surgical navigation, precision medicine, and medical robotics.
+                Originally from the Tokyo metropolitan area, I studied in the United States from 2021 to 2025 and graduated from UCLA with a double major in Computational and Systems Biology and Applied Mathematics. I aim to become a researcher in the field of AI in medicine.
                 In my free time, I enjoy jogging, manga/anime, and traveling.
                 Also as a Kaggle enthusiast, I have participated in various competitions and challenge workshops. Usually choose to work on video-related competition,
                  but I'm also curious about other fields, including 3D reconstruction, segmentation, and reinforcement learning. <br>
@@ -324,10 +350,28 @@
             <h2>News</h2>
             <ul>
                 <li>
-                    <strong>February 2026:</strong> I was accepted to Imperial College London for MRes. in Medical Robotics and Image-Guided Interventions program!</a>
+                    <strong>September 2026:</strong> Presented <em>Stitch-Inferencer: Enhance Endoscopic Video Segmentation and Tracking via Panoramic Reconstruction</em> as a poster at the MICCAI 2026 Workshop SafeSurg.
                 </li>
                 <li>
-                    <strong>February 2026:</strong> My second paper Cholec80-port was accepted to Computer Assisted Radiology and Surgery! <a href="https://arxiv.org/abs/2602.17060" target="_blank">Read the paper</a>
+                    <strong>September 2026:</strong> Presented <em>Solution for MVAA Challenge 2026: Ensemble, Tool-paste Augmentation and Tool-free View Generation</em> as a poster at the MICCAI 2026 Workshop on Medical World Models.
+                </li>
+                <li>
+                    <strong>September 2026:</strong> Finished 2nd in the MICCAI 2026 CLiMB Challenge and 4th in both the Frame and PROCEDURE tracks of the Orena FOCUS Challenge. Presented our top solutions at the MICCAI 2026 satellite events.
+                </li>
+                <li>
+                    <strong>August 2026:</strong> Our paper, <em>Stitch-Inferencer: Enhance Endoscopic Video Segmentation and Tracking via Panoramic Reconstruction</em>, was accepted to the MICCAI 2026 Workshop SafeSurg. <a href="https://papers.miccai.org/miccai-2026-sat/paper/SafeSurg_008.pdf" target="_blank" rel="noopener noreferrer">Read the paper</a>
+                </li>
+                <li>
+                    <strong>August 2026:</strong> Our MVAA Challenge solution paper, <em>Solution for MVAA Challenge 2026: Ensemble, Tool-paste Augmentation and Tool-free View Generation</em>, was accepted to the MICCAI 2026 Workshop on Medical World Models. <a href="https://papers.miccai.org/miccai-2026-sat/paper/MVAA_047.pdf" target="_blank" rel="noopener noreferrer">Read the paper</a>
+                </li>
+                <li>
+                    <strong>July 2026:</strong> Presented <em>Cholec80-port</em> at Computer Assisted Radiology and Surgery 2026. The paper will appear in the IJCARS supplement, Proceedings of CARS 2026. <a href="https://arxiv.org/abs/2602.17060" target="_blank" rel="noopener noreferrer">Read the paper</a>
+                </li>
+                <li>
+                    <strong>February 2026:</strong> I was accepted to Imperial College London's MRes in Medical Robotics &amp; Image-Guided Intervention program!
+                </li>
+                <li>
+                    <strong>February 2026:</strong> Our paper, <em>Cholec80-port: A Geometrically Consistent Trocar Port Segmentation Dataset for Robust Surgical Scene Understanding</em>, was accepted to Computer Assisted Radiology and Surgery 2026. <a href="https://arxiv.org/abs/2602.17060" target="_blank" rel="noopener noreferrer">Read the paper</a>
                 </li>
                 <li>
                     <strong>January 2026:</strong> PhaKIR 2024 challenge paper was accepted to Medical Image Analysis journal! <a href="https://doi.org/10.1016/j.media.2026.103945" target="_blank">Read the paper</a>
@@ -385,7 +429,7 @@
         <div class="container">
             <h2>Research</h2>
                 <div class="research-item">
-                    <h3>Zero-shot Adaption of Image Stiching Towards Endoscopic Surgical Video Understanding</h3>
+                    <h3>Stitch-Inferencer: Enhance Endoscopic Video Segmentation and Tracking via Panoramic Reconstruction</h3>
                     <h4>Jmees Inc.</h4>
                     <p>
                         Effective surgical video understanding requires the clear decomposition of the surgical scene into foreground elements, such as surgical tools, and background anatomical structures. 
@@ -393,7 +437,16 @@
                         By generating a stabilized, wide-angle view, we aim to enhance the temporal consistency of model predictions for downstream tasks, including segmentation, tracking, and phase classification. 
                         Furthermore, providing contextual information from outside the current frame allows the model to improve its overall predictive accuracy and robustness.
                     </p>
-                    <p>Nov 2025 – Present. Leading the project as the first author of the paper.</p>
+                    <p><strong>Related research outputs and applications:</strong></p>
+                    <ul>
+                        <li>
+                            <strong>Cholec80-port (CARS 2026):</strong> During the development of Stitch-Inferencer, we created and publicly released a geometrically consistent trocar port segmentation dataset required for the research. The paper was accepted to CARS 2026 and will appear in the IJCARS supplement. <a href="https://arxiv.org/abs/2602.17060" target="_blank" rel="noopener noreferrer">Read the paper</a>
+                        </li>
+                        <li>
+                            <strong>MVAA Challenge 2026 solution (MICCAI 2026 Workshop on Medical World Models):</strong> We applied the Stitch-Inferencer pipeline to tool-free view generation as part of our challenge solution. The solution paper was accepted to the workshop. <a href="https://papers.miccai.org/miccai-2026-sat/paper/MVAA_047.pdf" target="_blank" rel="noopener noreferrer">Read the paper</a>
+                        </li>
+                    </ul>
+                    <p>Nov 2025 – Present. Leading the project as the first author. Accepted to the MICCAI 2026 Workshop SafeSurg. <a href="https://papers.miccai.org/miccai-2026-sat/paper/SafeSurg_008.pdf" target="_blank" rel="noopener noreferrer">Read the paper</a></p>
                 </div>
                 <div class="research-item">
                     <h3>Phase Recognition of Laparoscopic Hysterectomy Toward Robotic Automation</h3>
@@ -404,7 +457,7 @@
                         In this research, we aim to develop a surgical phase classification model that recognizes the manipulator's angle from endoscopic video. 
                         The annotation scheme is being refined through close collaboration and repeated discussion between clinicians and annotators to ensure it is suitable for deep learning models.
                     </p>
-                    <p>July 2025 – Present. Working as a project researcher.</p>
+                    <p>April 2025 – Present. Working as a project researcher.</p>
                     <!--a href="https://link-to-paper.com" target="_blank" >Read More</a-->
                 </div>
                 <div class="research-item">
@@ -438,6 +491,55 @@
         </div>
     </section>
 
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+
+            <h3 class="publication-year">2026</h3>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <p><strong>Kikuchi, S.</strong>, Kouno, A., &amp; Matsuzaki, H. <a href="https://papers.miccai.org/miccai-2026-sat/paper/SafeSurg_008.pdf" target="_blank" rel="noopener noreferrer">“Stitch-Inferencer: Enhance Endoscopic Video Segmentation and Tracking via Panoramic Reconstruction.”</a> <em>MICCAI Workshop SafeSurg</em>, 2026.</p>
+                </div>
+                <div class="publication-item">
+                    <p><strong>Kikuchi, S.</strong> <a href="https://papers.miccai.org/miccai-2026-sat/paper/MVAA_047.pdf" target="_blank" rel="noopener noreferrer">“Solution for MVAA Challenge 2026: Ensemble, Tool-paste Augmentation and Tool-free View Generation.”</a> <em>MICCAI Workshop on Medical World Models</em>, 2026.</p>
+                </div>
+                <div class="publication-item">
+                    <p>Cheng, M., Tran, J., Littman, R., <strong>Kikuchi, S.</strong>, Ha, S. M., Yang, S., et al. <a href="https://dx.doi.org/10.2139/ssrn.6234771" target="_blank" rel="noopener noreferrer">“scGRNdb: A Database for over 1300 Cell-type-specific Global Gene Regulatory Networks across Human and Mouse Tissues Profiled in Single Cell Atlases.”</a> Under review in <em>Cell Systems</em>, 2026.</p>
+                </div>
+                <div class="publication-item">
+                    <p><strong>Kikuchi, S.</strong>, Kouno, A., &amp; Matsuzaki, H. <a href="https://arxiv.org/abs/2602.17060" target="_blank" rel="noopener noreferrer">“Cholec80-port: A Geometrically Consistent Trocar Port Segmentation Dataset for Robust Surgical Scene Understanding.”</a> To appear in the <em>IJCARS</em> supplement, Proceedings of CARS 2026.</p>
+                </div>
+                <div class="publication-item">
+                    <p>Rueckert, T., Rauber, D., Maerkl, R., Klausmann, L., Yildiran, S. R., <strong>Kikuchi, S.</strong>, et al. <a href="https://doi.org/10.1016/j.media.2026.103945" target="_blank" rel="noopener noreferrer">“Comparative Validation of Surgical Phase Recognition, Instrument Keypoint Estimation, and Instrument Instance Segmentation in Endoscopy: Results of the PhaKIR 2024 Challenge.”</a> <em>Medical Image Analysis</em>, 103945, 2026.</p>
+                </div>
+                <div class="publication-item">
+                    <p>Yang, K., Shi, P., Huang, H., Musio, F., Baazaoui, H., Aydin, O. U., et al., <strong>Kikuchi, S.</strong>, et al. <a href="https://doi.org/10.64898/2026.05.28.26354312" target="_blank" rel="noopener noreferrer">“TopBrain Segmentation Challenge for Whole Brain Vessel Anatomy.”</a> <em>medRxiv</em>, 2026.05.28.26354312, 2026.</p>
+                </div>
+                <div class="publication-item">
+                    <p>Hoffmann, H., Bady, S., de Boer, C., Kirchner, M., Egger, J., et al., <strong>Kikuchi, S.</strong>, et al. <a href="https://arxiv.org/abs/2605.22200" target="_blank" rel="noopener noreferrer">“OSS: Open Suturing Skills Vision-Based Assessment Challenge 2024-2025.”</a> <em>arXiv preprint arXiv:2605.22200</em>, 2026.</p>
+                </div>
+            </div>
+
+            <h3 class="publication-year">2025</h3>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <p>Schmidt, A., Karaoglu, M. A., Sinha, S., Jang, M., Ha, H., Jung, K., Gu, K., <strong>Kikuchi, S.</strong>, et al. <a href="https://arxiv.org/abs/2503.24306" target="_blank" rel="noopener noreferrer">“Point Tracking in Surgery: The 2024 Surgical Tattoos in Infrared (STIR) Challenge.”</a> <em>arXiv preprint arXiv:2503.24306</em>, 2025.</p>
+                </div>
+                <div class="publication-item">
+                    <p><strong>Kikuchi, S.</strong>, Kouno, A., &amp; Matsuzaki, H. <a href="https://openreview.net/pdf?id=UOKCo1qkNU" target="_blank" rel="noopener noreferrer">“Memory-Enhanced Temporal Learning: Leveraging SAM2's Memory Modules for Consistent Video Segmentation.”</a> <em>MICCAI Workshop MSB EMERGE</em>, 2025.</p>
+                </div>
+            </div>
+
+            <h3 class="publication-year">2024</h3>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <p>Ju, X., Daher, R., Caramalau, R., Huang, B., Ghamsarian, N., <strong>Kikuchi, S.</strong>, et al. <a href="https://arxiv.org/abs/2412.16078" target="_blank" rel="noopener noreferrer">“SegCol Challenge: Semantic Segmentation for Tools and Fold Edges in Colonoscopy Data.”</a> <em>arXiv preprint arXiv:2412.16078</em>, 2024.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- AI Competitions Section -->
     <section id="competitions">
         <div class="container">
@@ -454,6 +556,23 @@
                 <p>Compete with machine learning mode which classify seizures and other partterns of harmful brain activity in critically ill patients.</p>
                 </div>
             <h2>Conference Challenges</h2><br>
+            <h3>MICCAI 2026 Challenges</h3><br>
+            <div class="competition-container">
+                <div class="competition-item">
+                    <h3>MICCAI 2026 Endoscopic Vision Challenge Cluster — CLiMB Challenge</h3>
+                    <p><strong>Overall:</strong> <b>2nd</b></p>
+                    <div class="competition-details">
+                        <p>Presented our top solution at the MICCAI 2026 Endoscopic Vision Challenge Cluster in Strasbourg, France.</p>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <h3>MICCAI 2026 Orena FOCUS Challenge</h3>
+                    <p><strong>Frame:</strong> <b>4th</b> &nbsp; | &nbsp; <strong>PROCEDURE:</strong> <b>4th</b></p>
+                    <div class="competition-details">
+                        <p>Presented our top solution at the MICCAI 2026 satellite event in Strasbourg, France.</p>
+                    </div>
+                </div>
+            </div>
             <h3>MICCAI 2025 Challenges</h3><br>
             <div class="competition-container">
                 <div class="competition-item">
@@ -469,7 +588,7 @@
                 </div>
                 <div class="competition-item">
                     <h3>MICCAI 2025 TopBrain Challenge <a href="https://topbrain2025.grand-challenge.org/" target="_blank">(Official site)</a></h3>
-                    <p><strong>Segmentation Challenge for Whole Brain Vessel Anatomy</strong> — <b>CTA: 3rd</b>, <b>MTA: 3rd</b></p>
+                    <p><strong>Segmentation Challenge for Whole Brain Vessel Anatomy:</strong> <b>3rd</b></p>
                     <div class="competition-details">
                         <ul>
                             <li>Increased nnUNet training from the default 1000 to 3000 epochs based on prior experience.</li>
@@ -490,7 +609,7 @@
                 </div>
                 <div class="competition-item">
                     <h3>MICCAI 2025 EndoVis — RARE <a href="https://rare25.grand-challenge.org/" target="_blank">(Official site)</a></h3>
-                    <p><strong>3rd</strong></p>
+                    <p><strong>2nd</strong></p>
                     <div class="competition-details">
                         <p>Primary challenge: building robust models for extremely rare positive cases with subtle visual cues in real-world settings.</p>
                         <ul>
@@ -501,6 +620,7 @@
                     </div>
                 </div>
             </div>
+            <h3>MICCAI 2024 Challenges</h3><br>
             <div class="competition-container">
                 <div class="competition-item">
                     <h3>MICCAI Endoscopic Vision Challenge 2024: SegCol</h3>
@@ -536,6 +656,13 @@
                         </ul>
                     </div>
                 </div>
+                <div class="competition-item">
+                    <h3>MICCAI Endoscopic Vision Challenge 2024: PhaKIR</h3>
+                    <p><strong>Phase Recognition:</strong> <b>2nd</b> &nbsp; | &nbsp; <strong>Instrument Recognition:</strong> <b>1st</b></p>
+                    <div class="competition-details">
+                        <p>Phase, keypoint, and instrument recognition in endoscopic surgery. The challenge paper was published in <em>Medical Image Analysis</em> in 2026.</p>
+                    </div>
+                </div>
             </div>
             <!-- Add more competition items as needed -->
              <div class="competition-item">
@@ -557,11 +684,27 @@
         <div class="container">
             <h2>Experience</h2><br>
             <div class="experience-item">
-                <h3>Internship / ML Engineer</h3>
-                <p>Jmees Inc. | June - September 2025</p>
+                <h3>Research Engineer</h3>
+                <p>Jmees Inc. | October 2025 - Present</p>
                 <ul>
-                    <li>Involved in deveoping AI for surgical support systems </li>
-                    <li>Partcipated in 3 MICCAI Challenges to give insights for our models</li>
+                    <li>Conducting R&amp;D to integrate insights from research and MICCAI challenges into the company's surgical AI products.</li>
+                    <li>Developed video segmentation methods using image stitching and an expanded field of view for tool-free view generation and temporally consistent segmentation.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Research Intern</h3>
+                <p>Jmees Inc. | June 2024 - September 2025</p>
+                <ul>
+                    <li>Developed video segmentation models for a hysterectomy surgical support system affiliated with National Cancer Center Japan.</li>
+                    <li>Participated in MICCAI challenges focused on surgical video understanding and segmentation.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Project Researcher</h3>
+                <p>National Cancer Center Hospital East, Gynecology Department | April 2025 - Present</p>
+                <ul>
+                    <li>Conducting surgical navigation research with clinicians and surgical experts.</li>
+                    <li>Working on phase-classification-based surgical skill evaluation in total hysterectomy and pelvic lymphadenectomy.</li>
                 </ul>
             </div>
         </div>
@@ -578,7 +721,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Shunsuke Kikuchi. All rights reserved.</p>
+        <p>&copy; 2026 Shunsuke Kikuchi. All rights reserved.</p>
     </footer>
 </body>
 </html>
